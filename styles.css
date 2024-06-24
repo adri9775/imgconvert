@@ -1,0 +1,145 @@
+.body {
+            background-color: rgba(172, 153, 161, 0);
+            font-family: Sora, sans-serif;
+            overflow: auto;
+            width: 100%;
+            max-height: 500px;
+            margin: 0;
+            padding: 0;
+          }
+
+        
+          
+          .container {
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            max-width: 1000px;
+            margin: 20px auto;
+            box-shadow: 0 0 40px rgba(3, 2, 3, 0.11);
+            background-color: #30263E38;
+            padding: 10px 10px 10px;
+            border: 0.5px solid rgba(216, 133, 203, 0.1);
+            border-radius: 15px;
+          }
+
+          .container .heading{
+            text-align: center;
+            text-transform: capitalize;
+          }
+          
+          .upload-section {
+            width: 50%;
+            text-align: center;
+            padding: 20px 5px 42px;
+            overflow: hidden;
+          }
+          
+          .upload-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            cursor: pointer;
+            background-color: 2F273B;
+            border: 2px dashed rgba(216, 133, 203, 0.3);
+            border-radius: 10px;
+            margin: 20px 0;
+          }
+          
+          .upload-placeholder p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: rgba(216, 133, 203, 0.3);
+          }
+          
+          #image-file {
+            width: 70%;
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+          }
+          
+          .convert-section {
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+          }
+          
+          .convert-button {
+            width: 100%;
+            height: 50px;
+            font-size: 12px;
+            margin: 20px 20px 2px;
+            text-transform: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #362E4482;
+            border: 1.5px solid #333;
+            color: #B3B3B3;
+          }
+          
+          
+
+          .convert-button:hover{
+            background-image: linear-gradient(to right, rgba(102, 85, 218, 1),rgba(242, 41, 91, 1));
+            color: #fff;
+            border-width: 0px;
+          }
+          
+        .free-image-editor  p {
+              color: #B3B3B3;
+              text-transform: none;
+              font-size: 12px;
+              margin-top: -60px
+              
+          }
+          
+          #download-link {
+            
+            width: 100%;
+            height: 50px;
+            font-size: 12px;
+            margin: 20px 20px 2px;
+            background-image: linear-gradient(to right, rgba(102, 85, 218, 1),rgba(242, 41, 91, 1));
+            border: 1.5px solid #333;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            border: 1.5px solid #333;
+          
+          }
+          
+          
+          
+          #preview-image {
+              width: 50%;
+          }
+          
+          /* Styles for elements within the "free-image-editor" widget */
+          .free-image-editor {
+              /* Your widget-level styles here */
+          }
+
+          /* Styles for specific elements within the "free-image-editor" widget */
+          .free-image-editor .widget-content {
+              background-color: #FF0000; /* Red background for widget content */
+              color: #FFFFFF; /* White text color for widget content */
+          }
+
+          /* Add more specific selectors for other elements within the widget as needed */
+
+          @media (max-width: 767px) {
+            .container {
+              flex-direction: column;
+            }
+            .upload-section,
+            .convert-section {
+              width: 100%;
+            }
+          }
